@@ -1,4 +1,4 @@
-function [Ddiv Ddiv1] = divScore(data)
+function [Ddiv Ddiv1] = div(data)
 %% diversity score is defined as
 % the minimal difference with the images appearing before it
      
