@@ -1,4 +1,4 @@
-function relevance = relScore(data)
+function relevance = rel(data)
    % based on initial ranking order, the relevance scores are measured. 
 
     D=pdist2(data(1,:),data,'euclidean');
