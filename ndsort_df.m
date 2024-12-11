@@ -71,7 +71,7 @@ retrievalTime1 = toc;
     PopObj=[div Dsim];
 
     %% Non-dominating sort
-    % ��������������ʼ�������صĵ�һ��ͼƬ����ȥ��һ��ͼƬ��ʼ����
+    % 多样性排序保留初始检索返回的第一个图片，除去第一个图片开始排序
    divRank=[];
    [FrontNO,MaxFNO] = NDsort(PopObj,inf);
    
