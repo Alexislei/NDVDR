@@ -9,7 +9,7 @@ function [Ddiv Ddiv1] = divScore(data)
     
     Ddiv=zeros(M,1);
     weight=0.5;
-    % 当前图片与位于该图片之前的所有图片之间的最小距离
+    % calculate min distance
     for i=2:length(D)
         te1=D(i,1:i-1);
         if i<length(D)
