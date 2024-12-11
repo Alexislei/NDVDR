@@ -1,6 +1,5 @@
 function [Ddiv Ddiv1] = div(data)
-%% diversity score is defined as
-% the minimal difference with the images appearing before it
+%% diversity score
      
     M=size(data,1);
     D=pdist2(data,data,'euclidean');
