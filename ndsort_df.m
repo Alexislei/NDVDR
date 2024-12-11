@@ -57,10 +57,10 @@ retrievalTime1 = toc;
 % AP = cat_ap_topK(cateTrainTest,HammingRank,K)
 
 %%  %****************************************************************
-    % NDsort-Diversity Reranking
+    % ND Rerank
     %****************************************************************
    load nuswide-res.mat
-   N=1000;
+%     N=1000;
 %     N=sum(hammTrainTest<=16);
     topNrank=HammingRank(1:N,:); 
     dataN=traindata_res(topNrank,:); 
@@ -70,8 +70,7 @@ retrievalTime1 = toc;
     [div]=divScore(dataN);
     PopObj=[div Dsim];
 
-    %% Non-dominating sort
-    % 多样性排序保留初始检索返回的第一个图片，除去第一个图片开始排序
+    %% Ndsort
    divRank=[];
    [FrontNO,MaxFNO] = NDsort(PopObj,inf);
    
